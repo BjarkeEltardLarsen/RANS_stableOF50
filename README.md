@@ -36,6 +36,20 @@ Move the tutorials to the desired folder e.g FOAM_RUN
 
 	mv Tutorials $FOAM_RUN
 	
+## Tutorials
+
+The tutorials consist of eight different version of the compiled turbulence models. In each of these tutorials a wave is inialized in a domain which is exactly one wave length long with cyclic boundaries and a slip condition at the bed. This in other words an idealized case where the flow can considered very close to potential flow. 
+
+The cases ending with "Stab" have lambda2=0.05 and are stabilized version of the new turbulence models. In these cases the initial turbulence levels will decay in time. 
+
+Cases not ending with Stab corresponds to the standard models (with buoyancy production included) and here growth rather than decay in the turbulence level can be seen.
+
+To run a tutorial go to the folder of the tutorials and choose one of the eight cases. 
+Then run the RunScript by typing (the tutorials will take a few ours depending on speed of the machine)
+	
+	RunScript
+	
+	
 ## Usage
 Include the libary of the stabilized turbulence models in the system/controlDict folder
 
@@ -98,17 +112,5 @@ to
 	div(rho*phi,epsilon)
 	div(rho*phi,k)
 
-## Tutorials
 
-The tutorials consist of eight different version of the compiled turbulence models. In each of these tutorials a wave is inialized in a domain which is exactly one wave length long with cyclic boundaries and a slip condition at the bed. This in other words an idealized case where the flow can considered very close to potential flow. 
-
-The cases ending with "Stab" have lambda2=0.05 and are stabilized version of the new turbulence models. In these cases the initial turbulence levels will decay in time. 
-
-Cases not ending with Stab corresponds to the standard models (with buoyancy production included) and here growth rather than decay in the turbulence level can be seen.
-
-To run a tutorial go to the folder of the tutorials and choose one of the eight cases. 
-Then run the RunScript by typing (the tutorials will take a few ours depending on speed of the machine)
-	
-	RunScript
-	
 	
