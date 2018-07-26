@@ -20,15 +20,15 @@ In a linux terminal download the package with git by typing:
 	
 Create folder for turbulence model (if the folders already exist skip this part)
 
-	mkdir $WM_PROJECT_USER_DIR/src $WM_PROJECT_USER_DIR/src/turbulence $WM_PROJECT_USER_DIR/src/turbulence/incompressible
+	mkdir $WM_PROJECT_USER_DIR/src $WM_PROJECT_USER_DIR/src/TurbulenceModels $WM_PROJECT_USER_DIR/src/TurbulenceModels/turbulenceModels
 
 Move the folder to the user source code
 
-	mv RANS_stableFE31 $WM_PROJECT_USER_DIR/src/turbulence/incompressible/
+	mv RANS_stableOF50 $WM_PROJECT_USER_DIR/src/TurbulenceModels/turbulenceModels/
 	
 Go to the directory and compile the turbulence models
 
-	cd $WM_PROJECT_USER_DIR/src/turbulence/incompressible/RANS_stableFE31
+	cd $WM_PROJECT_USER_DIR/src/turbulence/incompressible/RANS_stableOF50
 	
 	wmake libso
 	
@@ -58,10 +58,14 @@ Include the libary of the stabilized turbulence models in the system/controlDict
     	"libMyStableRASModels.so"
 	);
 
-Change the constant/RASproperties
+Change the constant/turbulence
 Each of the four models can be chosen by uncommenting the desired model.
 If lambda2=0 the models default to their standard OpenFOAM implementation (but with the buoyancy production term added). 
 
+	simulationType  RAS;
+
+	RAS
+	{
 	RASModel        kOmegaStab;
 	//RASModel        kOmegaSSTStab;
 	//RASModel        kEpsilonStab;
@@ -91,26 +95,6 @@ If lambda2=0 the models default to their standard OpenFOAM implementation (but w
 	{
   	lambda2 0.05;
 	}
-
-Change the system/fvSchemes from (if they are specified individually)
-
-	ddt(k)
-	ddt(epsilon)
-	ddt(omega)
-	...
-	div(phi,omega)
-	div(phi,epsilon)
-	div(phi,k)
-	
-to 
-	
-	ddt(rho,k)
-	ddt(rho,epsilon)
-	ddt(rho,omega)
-	...
-	div(rho*phi,omega)
-	div(rho*phi,epsilon)
-	div(rho*phi,k)
 
 
 	
