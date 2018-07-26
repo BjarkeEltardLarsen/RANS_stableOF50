@@ -7,7 +7,7 @@ In past simulations of free-surface waves (both breaking and non-breaking) using
 
 This code is still being developed and is not yet finished. Stablized turbulence models for OpenFOAM-5.0
 
-Standard two-equation RANS models are unstable when applied to free-surface waves as documented in Larsen and Fuhrman 2018. In Larsen and Fuhrman 2018 it was likewise shown how standard two-equation turbulence models can be formally stabilized. This repository contains formally stabilized versions of standard two-equation turbulence models for foam-extend 3.1.
+Standard two-equation RANS models are unstable when applied to free-surface waves as documented in Larsen and Fuhrman 2018. In Larsen and Fuhrman 2018 it was likewise shown how standard two-equation turbulence models can be formally stabilized. This repository contains formally stabilized versions of standard two-equation turbulence models for OpenFOAM-5.0
 
 ## Installation
 Source OpenFOAM-5.0:
