@@ -2,13 +2,11 @@
 
 
 ## Introduction to the problem and solution
-In past simulations of free-surface waves (both breaking and non-breaking) using RANS models, there have been a marked a collective tendency to over-estimate the turbulence levels. In cases involving breaking waves, this has even been most pronounced prior to breaking with turbulence levels pre-breaking of same order of magnitude as in the surf-zone. The underlying cause was identified by Mayer and Madsen (2000) who showed that turbulence production exists in potential flow waves. They further showed that if omega falls below a certain threshold, the model becomes unstable, leading to an exponential growth in both the eddy viscosity and turbulent kinetic energy.
+In past simulations of free-surface waves (both breaking and non-breaking) using RANS models, there have been a marked a collective tendency to over-estimate the turbulence levels. In cases involving breaking waves, this has even been most pronounced prior to breaking with turbulence levels pre-breaking of same order of magnitude as in the surf-zone. The underlying cause was originally identified by Mayer and Madsen (2000) who showed that turbulence production exists in potential flow waves. They further showed that if omega falls below a certain threshold, the model becomes unstable, leading to an exponential growth in both the eddy viscosity and turbulent kinetic energy.
 
+In Larsen and Fuhrman (2018) it was proved that (1) standard two-equation closures (k-omega and k-epsilon) are unconditionally unstable and (2) they can be simply and elegantly stabilized, thus solving this long-standing wide-spread problem.
 
-This code is still being developed and is not yet finished. Stablized turbulence models for OpenFOAM-5.0
-
-Standard two-equation RANS models are unstable when applied to free-surface waves as documented in Larsen and Fuhrman 2018. In Larsen and Fuhrman 2018 it was likewise shown how standard two-equation turbulence models can be formally stabilized. This repository contains formally stabilized versions of standard two-equation turbulence models for OpenFOAM-5.0
-
+This repository contains formally stabilized versions of standard two-equation turbulence models for OpenFOAM-5.0. Additonally all versions in this repository, similar to the model in Larsen and Furhman (2018), also include a buoyancy production term. See e.g. Umlauf et al. (2003) or Burchard (2002) for more details.
 ## Installation
 Source OpenFOAM-5.0:
 
