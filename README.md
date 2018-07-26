@@ -94,5 +94,24 @@ If lambda2=0 the models default to their standard OpenFOAM implementation (but w
   	lambda2 0.05;
 	}
 
+## References
 
-	
+Burchard, H. 
+	Applied Turbulence modelling for Marine Waters 
+	Springer 
+	2002
+
+Larsen, B.E. and Fuhrman, D.R. 
+	On the over-production of turbulence beneath surface waves in RANS models 
+	J. Fluid Mech. 
+	2018 (accepted)
+
+Mayer, S. & Madsen, P.A. 
+	Simulation of breaking waves in the surf zone using a Navier-Stokes solver. 
+	In: Proc. 25th. ICCE, Sydney. Australia, pp. 928-941. 
+	2000
+
+Umlauf, L., Burchard, H. and Hutter, K. 
+	Extending the k-omega turbulence model towards oceanic applications
+	Ocean Modelling. 5(3), 195-218 
+	2003
