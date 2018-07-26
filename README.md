@@ -20,7 +20,7 @@ In a linux terminal download the package with git by typing:
 	
 Create folder for turbulence model (if the folders already exist skip this part)
 
-	mkdir $WM_PROJECT_USER_DIR/src $WM_PROJECT_USER_DIR/src/TurbulenceModels $WM_PROJECT_USER_DIR/src/TurbulenceModels/turbulenceModels
+	mkdir $WM_PROJECT_USER_DIR $WM_PROJECT_USER_DIR/src $WM_PROJECT_USER_DIR/src/TurbulenceModels $WM_PROJECT_USER_DIR/src/TurbulenceModels/turbulenceModels
 
 Move the folder to the user source code
 
@@ -28,7 +28,7 @@ Move the folder to the user source code
 	
 Go to the directory and compile the turbulence models
 
-	cd $WM_PROJECT_USER_DIR/src/turbulence/incompressible/RANS_stableOF50
+	cd $WM_PROJECT_USER_DIR/src/TurbulenceModels/turbulenceModels/RANS_stableOF50
 	
 	wmake libso
 	
