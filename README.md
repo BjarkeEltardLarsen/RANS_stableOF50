@@ -7,6 +7,20 @@ In past simulations of free-surface waves (both breaking and non-breaking) using
 In Larsen and Fuhrman (2018) it was proved that (1) standard two-equation closures (k-omega and k-epsilon) are unconditionally unstable and (2) they can be simply and elegantly stabilized, thus solving this long-standing wide-spread problem.
 
 This repository contains formally stabilized versions of standard two-equation turbulence models for OpenFOAM-5.0. Additonally all versions in this repository, similar to the model in Larsen and Furhman (2018), also include a buoyancy production term. See e.g. Umlauf et al. (2003) or Burchard (2002) for more details.
+
+For any usage of these models please refer to
+
+	@article{LarsenFuhrman2018,
+	  title = {On the over-production of turbulence
+	beneath surface waves in {RANS} models},
+	  language = {eng},
+	  author = {Larsen, B. E. and Fuhrman, D. R.},
+ 	 journal = JFM,
+ 	 pages = {Accepted},
+ 	 year = {2018}
+	}
+
+
 ## Installation
 Source OpenFOAM-5.0:
 
