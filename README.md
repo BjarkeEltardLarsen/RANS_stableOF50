@@ -13,9 +13,8 @@ For any usage of these models please refer to
 	@article{LarsenFuhrman2018,
 	  title = {On the over-production of turbulence
 	beneath surface waves in {RANS} models},
-	  language = {eng},
 	  author = {Larsen, B. E. and Fuhrman, D. R.},
- 	 journal = JFM,
+ 	 journal = {J. Fluid Mech.},
  	 pages = {Accepted},
  	 year = {2018}
 	}
