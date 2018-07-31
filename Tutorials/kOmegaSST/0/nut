@@ -34,7 +34,7 @@ boundaryField
   
     bottom
     {
-      type ZeroGradient;
+      type zeroGradient;
       /*        
 type            nutLowReWallFunction;
         Cmu             0.09;
