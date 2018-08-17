@@ -470,9 +470,10 @@ void kOmegaSSTStab<TurbulenceModel, BasicTurbulenceModel>::correct()
 
  volScalarField p0 = 2.0*magSqr(symm(fvc::grad(U))); // 2S_ij S_ij
  volScalarField pOmega= 2.0*magSqr(skew(fvc::grad(U))); // 2 Omega_ij Omega_ij
+volScalarField F2(this->F2());
 
- volScalarField omegaTilde2 = max (omega_, lambda2_*(beta1_/(betaStar_*gamma1_))*p0*omega_/(pOmega+pOmegaSmall_));
-  volScalarField nut = k_/omegaTilde2;
+ volScalarField nut= a1_*k_/max(a1_*lambda2_*beta1_/(betaStar_*gamma1_)*p0/(pOmega+pOmegaSmall_)*omega_,max(a1_*omega_, b1_*F2*sqrt(p0))); //nut as suggested by Larsen and Fuhrman 2018
+ 
 
 
 // * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * //
