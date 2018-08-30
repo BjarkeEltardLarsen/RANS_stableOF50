@@ -11,13 +11,17 @@ This repository contains formally stabilized versions of standard two-equation t
 For any usage of these models please refer to
 
 	@article{LarsenFuhrman2018,
-	  title = {On the over-production of turbulence
-	beneath surface waves in {RANS} models},
-	  author = {Larsen, B. E. and Fuhrman, D. R.},
- 	 journal = {J. Fluid Mech.},
- 	 pages = {Accepted},
- 	 year = {2018}
-	}
+	title = {On the over-production of turbulence
+	beneath surface waves in {Reynolds-averaged Navier-Stokes} models},
+	language = {eng},
+	author = {Larsen, B. E. and Fuhrman, D. R.},
+	journal = {J. Fluid Mech.},
+	VOLUME={853},
+	pages = {419--460},
+	year = {2018},
+	 doi =  {10.1017/jfm.2018.577},
+	url= {https://doi.org/10.1017/jfm.2018.577}
+		}
 
 
 ## Installation
