@@ -123,10 +123,10 @@ Burchard, H.
 	Springer 
 	2002
 
-Larsen, B.E. and Fuhrman, D.R. 
-	On the over-production of turbulence beneath surface waves in RANS models 
-	J. Fluid Mech. 
-	2018 (accepted)
+Larsen, B.E. and Fuhrman, D.R.
+	On the over-production of turbulence beneath surface waves in RANS models
+	J. Fluid Mech. 853. pp 419-460. https://doi.org/10.1017/jfm.2018.577
+	2018 
 
 Mayer, S. & Madsen, P.A. 
 	Simulation of breaking waves in the surf zone using a Navier-Stokes solver. 
